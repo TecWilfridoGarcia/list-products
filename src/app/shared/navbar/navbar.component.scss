@@ -1,0 +1,33 @@
+.nav-custom{
+    position: relative;
+    h1{
+        position: absolute;
+        left: 83px;
+        color: #2b66f9;
+    }
+}
+.bg-dark {
+    background-color: 	#012170 !important;
+}
+.logo
+    {    background: white;
+        width: 127px;
+        height: 39px;
+        border-radius: 50%;
+        position: absolute;
+        left: 140px;
+        display: flex;
+        justify-content: center;
+    .circle
+    {
+        margin: 10px 3px;
+    width: 19px;
+    height: 19px;
+    background: #012170;
+    border-radius: 50%;
+        .logo-text{
+            color: white;
+            margin: -3px 0px 1px 5px;
+            font-weight: 600;
+    }}
+}

@@ -1,0 +1,163 @@
+<div class="container-fluid">
+  <div class="header">
+    <div class="row description">
+      <div class="col oportunity"> <img src="../../../assets/img/38404.png" alt="" srcset="">
+        <h3>Oportunidades</h3>
+      </div>
+      <div class="col register">107 Registros</div>
+    </div>
+  </div>
+  <div class="options">
+    <ul class="nav justify-content-center">
+      <li class="nav-item active-all">
+        <a class="nav-link active" href="#">Vigentes</a>
+      </li>
+      <li class="nav-item bar">
+        <a class="nav-link" href="#">Recuperacion Cliente</a>
+      </li>
+      <li class="nav-item bar">
+        <a class="nav-link" href="#">Rechazadas</a>
+      </li>
+      <li class="nav-item bar">
+        <a class="nav-link" href="#">Perdidas</a>
+      </li>
+      <li class="nav-item bar">
+        <a class="nav-link" href="#">Concretadas</a>
+      </li>
+      <li class="nav-item bar">
+        <a class="nav-link" href="#">Crear Oportunidad</a>
+      </li>
+    </ul>
+  </div>
+  <div class="row options-price">
+    <div class="col-7">
+      <div class="row table-price">
+        <div class="col-sm-2 blue-1">
+          <h5>85</h5>
+          <span>Empresas</span>
+        </div>
+        <div class="col-sm-2  blue-2">
+          <h5>107</h5>
+          <span>Oportunidades</span>
+        </div>
+        <div class="col-sm-4  blue-3">
+          <h5>1.454.191,63 Usd</h5>
+          <span>Mensuales</span>
+        </div>
+        <div class="col-sm-4  blue-4">
+          <h5>4.205,00 Usd</h5>
+          <span>Gastos</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-3 content-probality">
+      <div class="probality row">
+        <h5>Probalilidad</h5>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="../../../assets/img/baja-1.png" alt="" srcset="">
+          <h6>28%</h6><span>Baja</span>
+        </div>
+        <div class="col">
+          <img src="../../../assets/img/medio-1.png" alt="" srcset="">
+          <h6>41.1%</h6><span>Media</span>
+        </div>
+        <div class="col">
+          <img src="../../../assets/img/alta-1.png" alt="" srcset="">
+          <h6>30.8%</h6><span>Alta</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-1 custom-col">
+      <button type="button" class="btn btn-success custom-buttom">Filtrar</button></div>
+  </div>
+  <div class="categories">
+    <ul class="nav justify-content-center">
+      <li class="nav-item bar-all">
+        <div class="active-all">
+          <a class="nav-link active-all" href="#">Todo</a>
+          <img src="./../../../assets/img/baseline-apps-24px.svg" alt="">
+        </div>
+
+      </li>
+      <li class="nav-item bar">
+        <a class="nav-link" href="#">Identificacion</a>
+        <img src="./../../../assets/img/baseline-star-24px.svg" alt="">
+      </li>
+      <li class="nav-item bar">
+        <a class="nav-link" href="#">Informacion</a>
+        <img src="./../../../assets/img/round-laptop-24px.svg" alt="">
+      </li>
+      <li class="nav-item bar">
+        <a class="nav-link" href="#">Estudio interno</a>
+        <img src="./../../../assets/img/outline-info-24px.svg" alt="">
+      </li>
+      <li class="nav-item bar">
+        <a class="nav-link" href="#">Innovacion & desarrollo</a>
+        <img src="./../../../assets/img/outline-search-24px.svg" alt="">
+
+      </li>
+      <li class="nav-item bar">
+        <a class="nav-link" href="#">Oferta</a>
+        <img src="./../../../assets/img/outline-local_offer-24px.svg" alt="">
+      </li>
+      <li class="nav-item bar">
+        <a class="nav-link" href="#">Muestra</a>
+        <img src="./../../../assets/img/outline-line_style-24px.svg" alt="">
+      </li>
+      <li class="nav-item bar">
+        <a class="nav-link" href="#">Negociacion</a>
+        <img src="./../../../assets/img/outline-money-24px.svg" alt="">
+      </li>
+    </ul>
+  </div>
+  <div class="content-products">
+    <div class="row">
+      <div class="col-sm-12 list-products">
+        <div class="card mt-4 animated fadeIn fast" *ngFor="let product of products; let i= index">
+          <div class="ref">
+            <h5>{{product.ref}}</h5>
+          </div>
+          <div class="img"> <img class="brochure-poster" [src]="product.img" /></div>
+          <div class="company">
+            <h5>{{product.company | uppercase}}</h5>
+          </div>
+          <div class="country">
+            <span>
+              {{product.country }}
+            </span>
+          </div>
+          <div class="name">
+            <h5>{{product.name | uppercase}}</h5>
+          </div>
+          <div class="price">
+            <p class="mount">Mensual</p>
+            <h6>{{product.price}}</h6>
+          </div>
+          <div class="identity">
+            <h6 class="mount">Identificada</h6>
+            <p>{{product.identity}}</p>
+          </div>
+          <div class="date1">
+            {{product.date1}}
+          </div>
+          <div class="view">
+            <div class="row">
+              <div class="col-6">
+                <h6>{{product.view}}</h6>
+              </div>
+              <div class="col-6">
+                <img [src]="product.icon" alt="" srcset="">
+                <span>{{product.state}}</span></div>
+            </div>
+
+          </div>
+          <div class="gastos">
+            {{product.gastos}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
